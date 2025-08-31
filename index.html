@@ -6,172 +6,71 @@
   <title>DMK Eletrotécnica</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body class="font-sans bg-gray-100 text-gray-900">
 
-  <!-- Hero -->
-  <!-- Hero com banner -->
-<section class="relative text-white flex flex-col justify-center items-center h-96">
-  <!-- Banner como background -->
-  <div class="absolute inset-0">
-    <img src="banner.jpg" alt="Banner DMK" class="w-full h-full object-cover">
-    <div class="absolute inset-0 bg-black bg-opacity-40"></div> <!-- sombra escura para destacar o texto -->
-  </div>
+  <!-- Banner -->
+  <section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('banner.jpg');">
+    <div class="absolute inset-0 bg-black opacity-40"></div>
 
-  <!-- Texto por cima do banner -->
-<div class="relative z-10 text-center px-6 text-white">
-  <h1 class="text-5xl font-bold mb-4">DMK Eletrotécnica</h1>
-  <p class="text-lg mb-6">Fiscalização de obras, perícias, inspeções, projetos e laudos técnicos</p>
+    <!-- Texto por cima do banner -->
+    <div class="relative z-10 text-center px-6 bg-black bg-opacity-50 rounded-lg inline-block p-6">
+      <h1 class="text-5xl font-bold mb-4 text-white">DMK Eletrotécnica</h1>
+      <p class="text-lg mb-6 text-gray-200">Fiscalização de obras, perícias, inspeções, projetos e laudos técnicos</p>
+      
+      <!-- Botão Solicite orçamento -->
+      <a href="#contato" class="inline-block bg-orange-500 px-8 py-4 rounded-lg font-semibold hover:bg-orange-600 transition text-white">
+        Solicite um orçamento
+      </a>
 
-  <!-- Botão Solicitar Orçamento -->
-  <a href="https://wa.me/5551992429703" target="_blank" 
-     class="inline-flex items-center gap-2 bg-green-500 px-8 py-4 rounded-lg font-semibold hover:bg-green-600 transition">
-    <!-- Ícone WhatsApp (SVG) -->
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" 
-         class="w-6 h-6" viewBox="0 0 24 24">
-      <path d="M20.52 3.48A11.85 11.85 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.17 1.59 5.98L0 24l6.2-1.63A11.96 11.96 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.18-3.48-8.52zM12 22a9.93 9.93 0 0 1-5.06-1.37l-.36-.21-3.68.97.98-3.59-.23-.37A9.94 9.94 0 0 1 2 12C2 6.48 6.48 2 12 2c2.67 0 5.18 1.04 7.07 2.93S22 9.33 22 12c0 5.52-4.48 10-10 10zm5.04-7.19c-.27-.14-1.59-.79-1.83-.88-.25-.09-.43-.14-.62.14s-.71.88-.87 1.06c-.16.18-.32.2-.59.07-.27-.14-1.13-.42-2.15-1.34-.79-.7-1.33-1.57-1.49-1.83-.16-.27-.02-.41.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.62-1.49-.85-2.04-.22-.52-.45-.45-.62-.46h-.53c-.18 0-.48.07-.73.34s-.96.93-.96 2.27.99 2.63 1.13 2.81c.14.18 1.96 3 4.75 4.2.66.28 1.17.45 1.57.58.66.21 1.26.18 1.74.11.53-.08 1.59-.65 1.81-1.27.23-.62.23-1.15.16-1.27-.07-.11-.25-.18-.52-.32z"/>
-    </svg>
-    Solicitar Orçamento
-  </a>
-
-  <!-- Número abaixo -->
-  <p class="mt-4 text-lg font-bold flex items-center justify-center gap-2">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6 text-green-500" viewBox="0 0 24 24">
-      <path d="M20.52 3.48A11.85 11.85 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.17 1.59 5.98L0 24l6.2-1.63A11.96 11.96 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.18-3.48-8.52z"/>
-    </svg>
-    (51) 99242-9703
-  </p>
-</div>
-
-
-
-
-  <!-- Sobre -->
-  <section class="py-16 px-6 max-w-5xl mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-4">Sobre a DMK</h2>
-    <p class="text-lg text-gray-700">
-      A <strong>DMK Eletrotécnica</strong> oferece soluções completas em energia elétrica, atuando com fiscalização de obras, perícias judiciais e extrajudiciais, inspeções técnicas, projetos e emissão de laudos de SPDA e NR10. Garantimos segurança, qualidade e eficiência em todos os serviços prestados.
-    </p>
-  </section>
-
-  <!-- Serviços -->
-  <section class="bg-gray-100 py-16 px-6">
-    <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-12">📌 Serviços</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-        <!-- Fiscalização de Obras -->
-        <div class="bg-white rounded-xl shadow overflow-hidden">
-          <img src="fiscalizacao.jpg" 
-               alt="Fiscalização de Obras" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">⚡ Fiscalização de Obras Elétricas</h3>
-            <p class="text-gray-600">
-              Acompanhamento técnico em redes, subestações e instalações elétricas, garantindo conformidade com normas e qualidade na execução.
-            </p>
-          </div>
-        </div>
-
-        <!-- Perícias Judiciais -->
-        <div class="bg-white rounded-xl shadow overflow-hidden">
-          <img src="pericia.jpg" 
-               alt="Perícias Judiciais" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">📑 Perícias Judiciais e Extrajudiciais</h3>
-            <p class="text-gray-600">
-              Atuação como perito e assistente técnico em processos envolvendo energia elétrica, com laudos claros e fundamentados.
-            </p>
-          </div>
-        </div>
-
-        <!-- Inspeções Técnicas -->
-        <div class="bg-white rounded-xl shadow overflow-hidden">
-          <img src="inspecao.jpg" 
-               alt="Inspeções Técnicas" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">🔍 Inspeções Técnicas</h3>
-            <p class="text-gray-600">
-              Vistorias detalhadas em instalações elétricas, identificando riscos e oportunidades de melhoria, garantindo segurança e eficiência.
-            </p>
-          </div>
-        </div>
-
-        <!-- Projetos Elétricos -->
-        <div class="bg-white rounded-xl shadow overflow-hidden">
-          <img src="projeto.jpg" 
-               alt="Projetos Elétricos" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">📐 Projetos Elétricos</h3>
-            <p class="text-gray-600">
-              Elaboração de projetos de baixa e média tensão, seguindo normas técnicas e garantindo segurança e viabilidade.
-            </p>
-          </div>
-        </div>
-
-        <!-- Laudos de SPDA -->
-        <div class="bg-white rounded-xl shadow overflow-hidden">
-          <img src="laudo.jpg" 
-               alt="Laudos de SPDA" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">🌩️ Laudos de SPDA</h3>
-            <p class="text-gray-600">
-              Emissão de laudos do Sistema de Proteção contra Descargas Atmosféricas, garantindo a proteção de pessoas e patrimônio.
-            </p>
-          </div>
-        </div>
-
-        <!-- Laudos NR10 -->
-        <div class="bg-white rounded-xl shadow overflow-hidden">
-          <img src="nr.jpg" 
-               alt="Laudos NR10" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">🛡️ Laudos NR10</h3>
-            <p class="text-gray-600">
-              Relatórios de conformidade das instalações elétricas com a NR10, assegurando atendimento às normas de segurança do trabalho.
-            </p>
-          </div>
-        </div>
-
+      <!-- WhatsApp -->
+      <div class="mt-6 flex items-center justify-center space-x-2">
+        <a href="https://wa.me/5551992429703" target="_blank" class="flex items-center space-x-2 bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-white font-semibold">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="w-6 h-6">
+          <span>(51) 99242-9703</span>
+        </a>
       </div>
     </div>
   </section>
 
+  <!-- Serviços -->
+  <section id="servicos" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-8">Nossos Serviços</h2>
+      <p class="text-lg mb-6 text-gray-700">Oferecemos soluções completas em projetos, inspeções, laudos técnicos, perícias e fiscalização de obras.</p>
+    </div>
+  </section>
+
   <!-- Contato -->
- <section id="contato" class="bg-blue-900 text-white py-16 px-6 text-center">
-  <h2 class="text-3xl font-bold mb-4">Entre em contato</h2>
-  <p class="mb-6">Solicite um orçamento agora mesmo</p>
-  <a href="https://wa.me/5551992429703" target="_blank" class="bg-orange-500 px-8 py-4 rounded-lg font-semibold hover:bg-orange-600 transition">
-    Falar no WhatsApp
-  </a>
-  <p class="mt-4">ou envie um e-mail para: 
-    <a href="mailto:dhuanylima@gmail.com" class="underline">dhuanylima@gmail.com</a>
-  </p>
-  <p class="mt-4 flex items-center justify-center gap-2">
-  📍
-  <a href="https://maps.app.goo.gl/vJbfCCMrQzay9Bpa7" target="_blank" class="underline font-semibold">
-    Localização
-  </a>
-</p>
+  <section id="contato" class="py-16 bg-gray-100">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-8">Entre em Contato</h2>
+      
+      <!-- WhatsApp embaixo -->
+      <div class="flex justify-center mb-6">
+        <a href="https://wa.me/5551992429703" target="_blank" class="flex items-center space-x-2 bg-green-500 hover:bg-green-600 px-6 py-3 rounded-lg text-white font-semibold">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="w-6 h-6">
+          <span>(51) 99242-9703</span>
+        </a>
+      </div>
 
-</section>
+      <!-- Localização -->
+      <div class="flex justify-center mt-4">
+        <a href="https://maps.app.goo.gl/vJbfCCMrQzay9Bpa7" target="_blank" class="flex items-center space-x-2 text-blue-600 hover:underline font-semibold">
+          <img src="https://cdn-icons-png.flaticon.com/512/535/535239.png" alt="Localização" class="w-6 h-6">
+          <span>Localização</span>
+        </a>
+      </div>
+    </div>
+  </section>
 
-
-  <footer class="bg-gray-900 text-white py-8 text-center">
-  <p class="text-xl font-semibold">Solicitar Orçamento</p>
-  <a href="https://wa.me/5551992429703" target="_blank" 
-     class="flex items-center justify-center gap-2 mt-2 text-green-400 font-bold text-lg hover:underline">
-    <!-- Ícone WhatsApp -->
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
-      <path d="M20.52 3.48A11.85 11.85 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.17 1.59 5.98L0 24l6.2-1.63A11.96 11.96 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.18-3.48-8.52z"/>
-    </svg>
-    (51) 99242-9703
-  </a>
-  
-  <p class="mt-6">© 2025 DMK Eletrotécnica. Todos os direitos reservados.</p>
-</footer>
-
+  <!-- Rodapé -->
+  <footer class="bg-gray-900 text-white py-6 text-center">
+    <p>&copy; 2025 DMK Eletrotécnica - Todos os direitos reservados</p>
+  </footer>
 
 </body>
 </html>
+
 
 
 
